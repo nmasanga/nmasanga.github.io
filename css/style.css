@@ -62,4 +62,8 @@ nav a:hover {
     align-items: center;
     margin-left: 0;
   }
+
+  .about div {
+    margin-top: 48px;
+  }
 }
