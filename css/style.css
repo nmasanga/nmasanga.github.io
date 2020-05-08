@@ -3,101 +3,114 @@
   box-sizing: border-box;
   padding:0px;
   margin:0px;
+  font-family:helvetica;
 }
 
 /*------------------------------*/
-nav {
+/* nav {
   min-width: 100%;
-  margin-left: 8vw;
-  margin-top: 6vh;
-  margin-bottom: 8vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: center; */
+  /* padding-left: 15%; */
+/* } */
+
+.container {
+  min-width: 100%;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  padding-left: 8vw;
 }
 
-nav a {
-  font-family:helvetica;
-  margin-right: 5%;
-  text-decoration: none;
-  color: black;
-  transition: color 0.5s;
+a {
 
+  margin-right: 5%;
+  text-decoration: underline;
+  color: orange;
+  transition: color 0.5s;
 }
 
 
 .logos {
-  margin-bottom: 48px;
+  min-width: 90%;
   display:flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-
+  padding-top: 6vh;
+  padding-bottom: 8vh;
 }
 
-.logos img {
-  margin-right: 16px;
-}
 
 .logos img:nth-child(1) {
-  margin-top: 24px;
+  margin-right: 16px;
+  margin-top: 16px;
 }
 
 
 /*------------------------------*/
 
+
+
 .about {
+  width: 90%;
   display: flex;
   flex-direction: row;
-  align-content: center;
-  min-width: 100%;
-  font-family: helvetica;
+  justify-content: flex-start;
   color: #696969;
-  margin-left: 8vw;
+  /* padding-left: 25%; */
 }
 
-.about div{
-  min-width: 200px;
-  width: 80%;
-}
-
-.about img{
-  width: 25%;
-  height: 25%;
-  max-width: 200px;
-  min-width: 175px;
+.polaroid {
+  max-width: 231px;
+  max-height: 368px;
+  min-width: 210px;
+  min-height: 334px;
   margin-right: 48px;
+  /* display: inline-block; */
 }
 
-.about p {
+.polaroid img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
-.about ul {
+
+.currently ul {
   margin-top: 8px;
   font-weight: 600;
   margin-bottom: 24px;
 }
 
-.about ul li {
+.currently ul li {
   margin-left: 16px;
   font-weight: 300;
   margin-bottom: 4px;
 }
 
-@media screen and (max-width: 760px) {
 
+@media screen and (max-width: 660px) {
+  .container {
+    padding: 0;
+    justify-content: center;
+  }
 
-}
+  .logos {
+    padding-left: 4vw;
+    padding-bottom: 6vh;
+  }
 
-@media screen and (max-width: 610px) {
-  /* .logos img {
-    width: 150px;
-  } */
-
-  .about div {
+  .currently {
     margin-top: 48px;
   }
 
-  .about img {
-    width: 20%;
-    min-width: 175px;
+  .polaroid {
+    /* width: 20%; */
+    /* min-width: 175px; */
+    width: 210px;
+    height: 334px;
     margin:0;
   }
 
@@ -105,6 +118,20 @@ nav a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 0;
+    padding: 0;
   }
+}
+
+.article-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+}
+
+.content {
+  width: 90%;
+  max-width: 720px;
+  min-width: 420px;
 }
