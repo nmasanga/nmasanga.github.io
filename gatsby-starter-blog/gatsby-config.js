@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/blog",
   siteMetadata: {
     title: `Gatsby Starter Blog`,
     author: {
@@ -6,7 +7,7 @@ module.exports = {
       summary: `who lives and works in San Francisco building useful things.`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `http://www.norm.coffee/blog`,
+    siteUrl: `https://www.gatsbyjs.org`,
     social: {
       twitter: `kylemathews`,
     },
