@@ -81,10 +81,8 @@ header.container {
 }
 
 .logo-container {
-  /* margin: auto; */
   max-width: 750px;
-  width: 90%;
-  /* width: auto; */
+  width: 95%;
   display:flex;
   flex-direction: row;
   justify-content: space-between;
@@ -99,7 +97,6 @@ header.container {
 }
 
 .menu-toggler {
-  /* position: absolute; */
   width: 5rem;
   height: 4rem;
   display: flex;
@@ -203,7 +200,7 @@ header.container {
 
 
 
-@media only screen and (max-width: 660px) {
+@media screen and (max-width: 660px) {
   .about {
     display: flex;
     flex-direction: column;
@@ -225,6 +222,31 @@ header.container {
 
 }
 
+@media screen and (max-width: 500px) {
+  .nm-logo{
+    max-width: 161px;
+    max-height: 73px;
+  }
+
+  .nm-logo img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .circle-logo{
+    max-width: 135px;
+    max-height: 135px;
+  }
+
+  .circle-logo img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .menu-toggler {
+    width: 4rem;
+    height: 3rem;
+}
 .article-container {
   display: flex;
   flex-direction: column;
