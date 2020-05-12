@@ -2,26 +2,41 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src='js/main.js'></script>
     <link href="css/style.css" rel="stylesheet" type="text/css">
+
   </head>
 
   <body>
-    <nav class='container'>
+    <header class='container'>
 
-      <div class=logos>
-        <img src='img/nm.svg'>
-        <img src='img/everything.svg'>
-        <!-- <a src='index.html'>about</a> -->
-        <!-- <a src='contact.html'>contact</a> -->
+      <nav class= 'top-nav'>
+        <ul class='nav-list'>
+          <li>
+            <a href ='index.html' class='nav-link'>Home</a>
+          </li>
+          <li>
+            <a href ='blog.html' class='nav-link'>Blog</a>
+          </li>
+          <li>
+            <a href ='photos.html' class='nav-link'>Photos</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class='logo-container'>
+        <div class='logos'>
+          <img src='img/nm.svg'>
+          <img src='img/everything.svg'>
+        </div>
+        <div class='menu-toggler'>
+          <div class='bar half start'></div>
+          <div class='bar'></div>
+          <div class='bar half end'></div>
+        </div>
       </div>
-
-      <!-- <a href="index.html">01. index</a>
-      <a href="stream.html">02. stream</a>
-      <a href="write.html">03. write</a>
-      <a href="photos.html">04. photos</a>
-      <a href="code.html">05. code</a>
-      <a href="everything.html">06. everything else</a> -->
-    </nav>
+    </header>
 
     <section class="container">
       <div class='about'>
@@ -58,10 +73,6 @@
         </div>
       </div>
     </section>
-
-    <!-- <footer>
-
-    </footer> -->
 
 
   </body>
