@@ -87,7 +87,7 @@ html {
 /*------------HAMBURGER MENU-------------------*/
 
 header {
-  font-family: geomanist;
+  font-family: geomanist, helvetica;
   font-size: 80px;
   font-weight: 900;
   color: #696969;
@@ -235,7 +235,7 @@ header {
 }
   .currently {
     margin-top: 48px;
-    padding-left: 5%;
+    padding: 0;
   }
 
   .polaroid {
