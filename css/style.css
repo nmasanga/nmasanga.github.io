@@ -89,7 +89,7 @@ html {
 header {
   font-family: geomanist;
   font-size: 80px;
-  font-weight: 800;
+  font-weight: 900;
   color: #696969;
 }
 
@@ -118,7 +118,7 @@ header {
 }
 
 .logos img{
-  padding-left: 16px;
+  padding-left: 8px;
 }
 
 .menu-toggler {
@@ -259,6 +259,10 @@ header {
 
   .menu-toggler.open {
     height: 2rem;
+  }
+
+  .logos img{
+    padding-left: 8px;
   }
 }
 
