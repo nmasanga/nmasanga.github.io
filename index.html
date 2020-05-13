@@ -4,6 +4,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src='js/main.js'></script>
+    <script type="text/javascript">
+      // place your images in this array
+      var random_images_array = ['aeropress.svg', 'chemex.svg', 'french-press.svg', 'hario-v60.svg', 'moka-pot.svg'];
+
+      function getRandomImage(imgAr, path) {
+          path = path || 'img/coffee/smol/'; // default path here
+          var num = Math.floor( Math.random() * imgAr.length );
+          var img = imgAr[ num ];
+          var imgStr = '<img src="' + path + img + '" alt = "">';
+          document.write(imgStr); document.close();
+      }
+
+    </script>
     <link href="css/style.css" rel="stylesheet" type="text/css">
 
   </head>
@@ -14,25 +27,21 @@
       <nav class= 'top-nav'>
         <ul class='nav-list'>
           <li>
-            <a href ='index.html' class='nav-link'>Home</a>
+            <a href ='index.html' class='nav-link'>home</a>
           </li>
           <li>
-            <a href ='blog.html' class='nav-link'>Blog</a>
+            <a href ='blog.html' class='nav-link'>blog</a>
           </li>
           <li>
-            <a href ='photos.html' class='nav-link'>Photos</a>
+            <a href ='photos.html' class='nav-link'>photos</a>
           </li>
         </ul>
       </nav>
 
       <div class='logo-container'>
         <div class='logos'>
-          <div class='nm-logo'>
-            <img src='img/nm.svg'>
-          </div class='nm-logo'>
-          <div class='circle-logo'>
-            <img src='img/everything.svg'>
-          </div>
+          <p>norm.</p>
+          <script type="text/javascript">getRandomImage(random_images_array, 'img/coffee/smol/')</script>
         </div>
         <div class='menu-toggler'>
           <div class='bar half start'></div>
@@ -52,7 +61,7 @@
             <ul>
               <li>figuring out my next steps</li>
               <li>trying to learn too many things at once</li>
-              <li><a href='/calendar.html'>also, i wrote a thing</a></li>
+              <!-- <li><a href='/calendar.html'>also, i wrote a thing</a></li> -->
             </ul>
 
 

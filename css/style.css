@@ -1,9 +1,17 @@
+@font-face {
+  font-family: bonkers;
+  src: url(fonts/Bonkers/Bonkers.ttf);
+}
+
+@font-face {
+  font-family: geomanist;
+  src: url(fonts/geomanist-regular.ttf)
+}
 
 * {
   box-sizing: border-box;
   padding:0px;
   margin:0px;
-
 }
 
 /*------------------------------*/
@@ -16,9 +24,13 @@ html {
 
 .container {
   min-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 /*----------HIDDEN MENU----------*/
+
 
 .top-nav {
   width: 100%;
@@ -70,15 +82,18 @@ html {
   border-radius: initial;
 }
 
+
+
 /*------------HAMBURGER MENU-------------------*/
 
-
-header.container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-
+header {
+  font-family: geomanist;
+  font-size: 80px;
+  font-weight: 800;
+  color: #696969;
 }
+
+
 
 .logo-container {
   max-width: 750px;
@@ -91,14 +106,24 @@ header.container {
   padding-bottom: 8vh;
 }
 
+
 .logos {
   display:flex;
   align-items: center;
 }
 
+.logos p {
+  margin: 0px;
+  padding: 0px;
+}
+
+.logos img{
+  padding-left: 16px;
+}
+
 .menu-toggler {
-  width: 5rem;
-  height: 4rem;
+  width: 4rem;
+  height: 3.2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -113,16 +138,13 @@ header.container {
 
 .bar {
   /* background: linear-gradient(to right, #ffe838, #fd75bf); */
-  background: orange;
+  background: #696969;
   width: 100%;
   height: 4px;
   border-radius: .8rem;
 
 }
 
-/* .bar.half{
-  width: 50%;
-} */
 
 .bar.start{
   transform-origin: right;
@@ -130,7 +152,7 @@ header.container {
 }
 
 .open .bar.start{
-  transform: rotate(-90deg) translateX(.8rem);
+  transform: rotate(-90deg) translateX(.69rem);
   width: 50%;
 }
 
@@ -142,24 +164,26 @@ header.container {
 }
 
 .open .bar.end{
-  transform: rotate(-90deg) translateX(-.8rem);
+  transform: rotate(-90deg) translateX(-.69rem);
   width: 50%;
 }
 
 
+.coffee {
+  padding-left: 24px;
+}
 
 
 /*------------------------------*/
 
 
 .about {
-  min-width: 50%;
-  min-height: 80%;
+  max-width: 750px;
+  width: 95%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   color: #696969;
-  margin-left: 4vw;
   font-size: 16px;
 }
 
@@ -223,30 +247,21 @@ header.container {
 }
 
 @media screen and (max-width: 500px) {
-  .nm-logo{
-    max-width: 161px;
-    max-height: 73px;
-  }
 
-  .nm-logo img{
-    width: 100%;
-    height: 100%;
-  }
-
-  .circle-logo{
-    max-width: 135px;
-    max-height: 135px;
-  }
-
-  .circle-logo img{
-    width: 100%;
-    height: 100%;
+  header{
+    font-size: 72px;
   }
 
   .menu-toggler {
-    width: 4rem;
-    height: 3rem;
+    width: 3rem;
+    height: 2.5rem;
+  }
+
+  .menu-toggler.open {
+    height: 2rem;
+  }
 }
+
 .article-container {
   display: flex;
   flex-direction: column;
