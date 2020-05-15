@@ -84,10 +84,10 @@ html {
 
 
 /*------------HEADER-------------------*/
-
 header {
-
+  min-height: 20%;
 }
+
 
 header .inner-container{
   display:flex;
@@ -104,6 +104,7 @@ header a{
   font-weight: 900;
   color: #808796;
   text-decoration: none;
+  letter-spacing: -1px;
 }
 .logos {
   display:flex;
@@ -167,7 +168,7 @@ header a{
 
 .about {
   color: #696969;
-  font-size: 15px;
+  font-size: 14px;
   display:flex;
   flex-direction: row;
 }
@@ -220,6 +221,13 @@ header a{
   }
 
 
+/*--------FOOTER----------*/
+footer .inner-container{
+  display: flex;
+  padding: 40px 0 40px 0;
+  /* justify-content: flex-end; */
+}
+
 @media screen and (max-width: 660px) {
   .about {
     display: flex;
@@ -239,18 +247,9 @@ header a{
     height: 334px;
     margin:0;
   }
-
 }
 
 @media screen and (max-width: 384px) {
-
-  header{
-    font-size: 72px;
-  }
-
-  .inner-container {
-    width: 90%;
-  }
 
   .menu-toggler {
     width: 3rem;
