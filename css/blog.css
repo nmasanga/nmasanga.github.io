@@ -1,0 +1,62 @@
+.blog {
+  display: flex;
+  flex-direction: column;
+  font-size: 21px;
+  color: #696969;
+}
+
+.blog h1 {
+  font-size: 40px;
+  font-weight: 500;
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+  color: #696969;
+}
+
+blog a:hover {
+  text-decoration: underline;
+}
+
+.title {
+  font-size: 28px;
+  /* padding-bottom: 48px; */
+}
+
+.posts {
+  margin-top: 8vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.posts li{
+  display: flex;
+  flex-direction: column;
+}
+
+.subtitle {
+  font-size: 24px;
+  padding-bottom: 16px;
+}
+
+.date {
+  color: #A0C3D2;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 64px;
+}
+
+.blog p{
+  margin-bottom: 16px;
+  font-family: "Times";
+  line-height: 32px;
+}
+
+@media screen and (max-width: 768px) {
+  .blog p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}

@@ -1,92 +1,47 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src='js/main.js'></script>
-    <script type="text/javascript">
-      // place your images in this array
-      var random_images_array = ['aeropress.svg', 'chemex.svg', 'french-press.svg', 'hario-v60.svg', 'moka-pot.svg'];
+---
+layout: default
+title: norm.
+---
+<div class='about inner-container'>
+  <div class='polaroid'>
+    <img src='img/polaroid.png'>
+  </div>
+  <div class='currently'>
+    <p>sup, i'm norman masanga.</p>
+    <p class='description'>
+      from my site's url, you can probably guess
+      that i love to drink coffee (a tech bro that loves coffee, shocker). as much as i love burr grinded single origin beans
+      extracted with a hario v60, i still appreciate a cup from timmies once in a while.
+    </p>
 
-      function getRandomImage(imgAr, path) {
-          path = path || 'img/coffee/smol/'; // default path here
-          var num = Math.floor( Math.random() * imgAr.length );
-          var img = imgAr[ num ];
-          var imgStr = '<img src="' + path + img + '" alt = "">';
-          document.write(imgStr); document.close();
-      }
+    <div class='bean'>
+      <img src='/img/beanazz.svg'>
+    </div>
 
-    </script>
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-
-  </head>
-
-  <body>
-    <header class='container'>
-
-      <nav class= 'top-nav'>
-        <ul class='nav-list'>
-          <li>
-            <a href ='index.html' class='nav-link'>home</a>
-          </li>
-          <li>
-            <a href ='blog.html' class='nav-link'>blog</a>
-          </li>
-          <li>
-            <a href ='photos.html' class='nav-link'>photos</a>
-          </li>
-        </ul>
-      </nav>
-
-      <div class='logo-container'>
-        <div class='logos'>
-          <p>norm.</p>
-          <script type="text/javascript">getRandomImage(random_images_array, 'img/coffee/smol/')</script>
-        </div>
-        <div class='menu-toggler'>
-          <div class='bar half start'></div>
-          <div class='bar'></div>
-          <div class='bar half end'></div>
-        </div>
-      </div>
-    </header>
-
-    <section class="container">
-      <div class='about'>
-        <div class='polaroid'>
-          <img src='img/polaroid.png'>
-        </div>
-        <div class='currently'>
-          <p>currently:</p>
-            <ul>
-              <li>figuring out my next steps</li>
-              <li>trying to learn too many things at once</li>
-              <!-- <li><a href='/calendar.html'>also, i wrote a thing</a></li> -->
-            </ul>
+    <p>currently:</p>
+      <ul>
+        <li>figuring out my next steps</li>
+        <li>trying to learn too many things at once</li>
+      </ul>
 
 
-          <p>previously:</p>
-            <ul>
-              <li>data analyst @ <a href='https://www.jamcity.com/' target="_blank">jam city</a></li>
-              <li>product manager intern @ <a href='https://www.centro.net/' target="_blank">centro</a></li>
-              <li>product manager co-op @ <a href='https://www.vidyard.com/' target="_blank">vidyard</a></li>
-              <li>product manager intern @ <a href='https://www.informatica.com/' target="_blank">informatica</a></li>
-              <li>information developer co-op @ <a href='https://www.eventmobi.com/' target="_blank">eventmobi</a></li>
-              <li>product manager co-op @ <a href='https://influitive.com/' target="_blank">influitive</a></li>
-              <li>sports editor / photo editor @ <a href='http://uwimprint.ca/article/author/normanmasanga/' target="_blank">imprint publications</a></li>
-              <!-- <li>sports editor / photo editor @ imprint publications</li> -->
-            </ul>
-          <p>education:</p>
-            <ul>
-              <li>university of waterloo '17</li>
-              <li>bachelor of mathematics</li>
-              <li>statistics major</li>
-              <li>english minor</li>
-            </ul>
-        </div>
-      </div>
-    </section>
-
-
-  </body>
-</html>
+    <p>previously:</p>
+      <ul>
+        <li>data analyst @ <a href='https://www.jamcity.com/' target="_blank">jam city</a></li>
+        <li>product manager intern @ <a href='https://www.centro.net/' target="_blank">centro</a></li>
+        <li>product manager co-op @ <a href='https://www.vidyard.com/' target="_blank">vidyard</a></li>
+        <li>product manager intern @ <a href='https://www.informatica.com/' target="_blank">informatica</a></li>
+        <li>information developer co-op @ <a href='https://www.eventmobi.com/' target="_blank">eventmobi</a></li>
+        <li>product manager co-op @ <a href='https://influitive.com/' target="_blank">influitive</a></li>
+        <li>sports editor / photo editor @ <a href='http://uwimprint.ca/article/author/normanmasanga/' target="_blank">imprint publications</a></li>
+        <!-- <li>sports editor / photo editor @ imprint publications</li> -->
+      </ul>
+    <p>education:</p>
+      <ul>
+        <li>university of waterloo '17</li>
+        <li>bachelor of mathematics</li>
+        <li>statistics major</li>
+        <li>english minor</li>
+      </ul>
+  </div>
+</div>

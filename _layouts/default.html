@@ -3,27 +3,60 @@
 		<head>
 			<title>{{ page.title }}</title>
 			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+	    <script src="/js/jquery-3.4.1.min.js"></script>
+	    <script src='/js/main.js'></script>
+	    <script type="text/javascript">
+	      // place your images in this array
+	      var random_images_array = ['aeropress.svg', 'chemex.svg', 'french-press.svg', 'hario-v60.svg', 'moka-pot.svg'];
+
+	      function getRandomImage(imgAr, path) {
+	          path = path || '/img/coffee/smol/'; // default path here
+	          var num = Math.floor( Math.random() * imgAr.length );
+	          var img = imgAr[ num ];
+	          var imgStr = '<img src="' + path + img + '" alt = "">';
+	          document.write(imgStr); document.close();
+	      }
+
+	    </script>
+	    <link href="/css/style.css" rel="stylesheet" type="text/css">
 		</head>
 		<body>
-			<nav>
-	    		<ul>
-	        		<li><a href="/">Home</a></li>
-		        	<li><a href="/about">About</a></li>
-	        		<li><a href="/cv">CV</a></li>
-	        		<li><a href="/blog">Blog</a></li>
-	    		</ul>
-			</nav>
-			<div class="container">
+			<header class='container'>
+
+	      <nav class= 'top-nav'>
+	        <ul class='nav-list'>
+	          <li>
+	            <a href ='/index.html' class='nav-link'>home</a>
+	          </li>
+	          <li>
+	            <a href ='/blog' class='nav-link'>blog</a>
+	          </li>
+	          <li>
+	            <a href ='/photos' class='nav-link'>photos</a>
+	          </li>
+	        </ul>
+	      </nav>
+
+	      <div class='inner-container'>
+	        <div class='logos'>
+	          	<p><a href='/'>norm.</a></p>
+	          	<script type="text/javascript">getRandomImage(random_images_array, '/img/coffee/smol/')</script>
+	        </div>
+	        <div class='menu-toggler'>
+	          <div class='bar half start'></div>
+	          <div class='bar'></div>
+	          <div class='bar half end'></div>
+	        </div>
+	      </div>
+	    </header>
+			<section class="container">
 
 			{{ content }}
+			</section>
+			<footer class='container'>
+			</footer>
 
-			</div><!-- /.container -->
-			<footer>
-	    		<ul>
-	        		<li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
-	        		<li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
-				</ul>
 			</footer>
 		</body>
 	</html>

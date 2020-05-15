@@ -29,6 +29,11 @@ html {
   justify-content: center;
 }
 
+.inner-container {
+  max-width: 768px;
+  width: 90%;
+}
+
 /*----------HIDDEN MENU----------*/
 
 
@@ -62,6 +67,7 @@ html {
 }
 
 .nav-list li a{
+  font-size: 32px;
   text-decoration: none;
   color: #ffffff;
 }
@@ -70,13 +76,6 @@ html {
   text-decoration: underline;
 }
 
-/* .nav-link:hover,
-.nav-link:focus {
-  background: linear-gradient(to top, #ffe838, #fd57bf)
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-} */
-
 .top-nav.open{
   top: 0;
   border-radius: initial;
@@ -84,46 +83,43 @@ html {
 
 
 
-/*------------HAMBURGER MENU-------------------*/
+/*------------HEADER-------------------*/
 
 header {
-  font-family: geomanist, helvetica;
-  font-size: 80px;
-  font-weight: 900;
-  color: #696969;
+
 }
 
-
-
-.logo-container {
-  max-width: 750px;
-  width: 95%;
+header .inner-container{
   display:flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding-top: 6vh;
-  padding-bottom: 8vh;
+  padding-bottom: 80px;;
 }
 
-
+header a{
+  font-family: geomanist, helvetica;
+  font-size: 64px;
+  font-weight: 900;
+  color: #808796;
+  text-decoration: none;
+}
 .logos {
   display:flex;
   align-items: center;
-}
-
-.logos p {
-  margin: 0px;
-  padding: 0px;
 }
 
 .logos img{
   padding-left: 8px;
 }
 
+
+/*-------------HAMBURGER MENU---------------*/
+
 .menu-toggler {
-  width: 4rem;
-  height: 3.2rem;
+  width: 3rem;
+  height: 2.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -134,17 +130,16 @@ header {
 
 .menu-toggler.open{
   transform: rotate(-45deg);
+  height: 2rem;
 }
 
 .bar {
   /* background: linear-gradient(to right, #ffe838, #fd75bf); */
-  background: #696969;
+  background: #808796;
   width: 100%;
   height: 4px;
   border-radius: .8rem;
-
 }
-
 
 .bar.start{
   transform-origin: right;
@@ -155,7 +150,6 @@ header {
   transform: rotate(-90deg) translateX(.69rem);
   width: 50%;
 }
-
 
 .bar.end{
   align-self: flex-end;
@@ -169,30 +163,18 @@ header {
 }
 
 
-.coffee {
-  padding-left: 24px;
-}
-
-
-/*------------------------------*/
-
+/*---------------INDEX---------------*/
 
 .about {
-  max-width: 750px;
-  width: 95%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
   color: #696969;
-  font-size: 16px;
+  font-size: 15px;
+  display:flex;
+  flex-direction: row;
 }
 
 .polaroid {
-  max-width: 231px;
-  max-height: 368px;
-  min-width: 210px;
-  min-height: 334px;
-  /* margin-right: 48px; */
+  max-width: 210px;
+  mma-height: 334px;
 }
 
 .polaroid img {
@@ -200,8 +182,23 @@ header {
   max-height: 100%;
 }
 
+.description {
+  font-weight: 300;
+  max-width: 400px;
+  line-height: 21px;
+}
+
 .currently {
   padding-left: 48px;
+  /* order: 1; */
+}
+
+.bean{
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  margin: 24px 0 24px 0;
 }
 
 .currently ul {
@@ -221,7 +218,6 @@ header {
   width: 100%;
   color: orange;
   }
-
 
 
 @media screen and (max-width: 660px) {
@@ -246,10 +242,14 @@ header {
 
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 384px) {
 
   header{
     font-size: 72px;
+  }
+
+  .inner-container {
+    width: 90%;
   }
 
   .menu-toggler {
@@ -260,29 +260,10 @@ header {
   .menu-toggler.open {
     height: 2rem;
   }
-
-  .logos img{
-    padding-left: 8px;
-  }
 }
-
-.article-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-width: 100%;
-}
-
-.content {
-  width: 90%;
-  max-width: 720px;
-  min-width: 320px;
-}
-
-footer {
+/* footer {
   min-width: 100%;
   height: 200px;
   background-color: orange;
   margin-top: 5%;
-}
+} */
