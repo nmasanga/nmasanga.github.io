@@ -1,32 +1,10 @@
 ---
 layout: default
-title: photo-test
 ---
-
 <link type="text/css" rel="stylesheet" href="/css/lightslider.css" />
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="/js/lightslider.js"></script>
 
-<style>
-.lslide {
-  height: 75vh;
-  display:flex;
-}
-
-.lslide img {
-  max-height: 650px;
-  width: 100%;
-  object-fit: contain;
-  vertical-align: middle;
-}
-
-.photo {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-</style>
 
 <script>
    $(document).ready(function() {
@@ -37,26 +15,26 @@ title: photo-test
             item:1
         });
 });
-
 </script>
 
 
 <div class='photo'>
-  <!-- <div>
+  <div class='places'>
     <ul>
-      <li>loosies</li>
-      <li>taiwan</li>
-      <li>south korea</li>
+      <li><a href='/photos'>loosies</a></li>
+      <li><a href='/photos/south-korea.html'>south korea</a></li>
+      <li><a href='/photos/taiwan.html'>taiwan</a></li>
     </ul>
-  </div> -->
+  </div>
   <ul id="content-slider" class="content-slider">
-
     {% for image in site.static_files %}
-      {% if image.path contains 'portfolio/loosies' %}
+      {% if image.path contains 'portfolio/taiwan' %}
       <li>
           <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
       </li>
       {% endif %}
     {% endfor %}
+
+
   </ul>
 </div>

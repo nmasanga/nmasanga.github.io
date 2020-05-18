@@ -3,6 +3,55 @@
 * Copyright (c) 2015 Sachin N; Licensed MIT */
 /** /!!! core css Should not edit !!!/**/
 
+
+
+/*------NORM ADDED--------*/
+.photo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-width: 100%;
+}
+
+.lslide {
+  height: 600px;
+  display:flex;
+  align-items: center;
+}
+
+.lslide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.places {
+  min-width: 88px;
+}
+
+.places ul {
+  padding-left: 10px;
+  padding-top: 72px;
+  list-style-type: none;
+  line-height: normal;
+  font-size: 14px;
+}
+
+.photo ul li {
+  margin-bottom: 12px;
+}
+
+.photo a {
+  text-decoration: none;
+  color: #808796;
+}
+
+
+
+/*---------------------------*/
+
+
+
 .lSSlideOuter {
     overflow: hidden;
     -webkit-touch-callout: none;
@@ -13,6 +62,7 @@
     user-select: none;
     max-width: 800px;
     width: 100%;
+    margin-left: 5%;
 }
 .lightSlider:before, .lightSlider:after {
     content: " ";
@@ -153,17 +203,16 @@
 
 /* slider actions */
 .lSAction > a {
-    width: 32px;
+    width: 16px;
     display: block;
     top: 50%;
     height: 32px;
-    background: orange;
-    background-image: url('../img/controls.png');
+    /* background: orange; */
     cursor: pointer;
     position: absolute;
     z-index: 99;
     margin-top: -16px;
-    opacity: 0.5;
+    opacity: 0.75;
     -webkit-transition: opacity 0.35s linear 0s;
     transition: opacity 0.35s linear 0s;
 }
@@ -171,12 +220,16 @@
     opacity: 1;
 }
 .lSAction > .lSPrev {
-    background-position: 0 0;
+    /* background-position: 0 0; */
+    background-image: url('../img/prev.svg');
+    background-repeat: no-repeat;
     left: 10px;
 }
 .lSAction > .lSNext {
-    background-position: -32px 0;
+    /* background-position: -32px 0; */
     right: 10px;
+    background-image: url('../img/next.svg');
+    background-repeat: no-repeat;
 }
 .lSAction > a.disabled {
     pointer-events: none;
@@ -393,4 +446,30 @@
   cursor: -o-grabbing;
   cursor: -ms-grabbing;
   cursor: grabbing;
+}
+
+
+@media screen and (max-width: 660px) {
+  .photo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .lSSlideOuter {
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .places {
+    width: 80%;
+    margin-bottom: 48px;
+  }
+  .places ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
 }

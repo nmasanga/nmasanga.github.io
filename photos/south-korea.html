@@ -1,0 +1,40 @@
+---
+layout: default
+---
+<link type="text/css" rel="stylesheet" href="/css/lightslider.css" />
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="/js/lightslider.js"></script>
+
+
+<script>
+   $(document).ready(function() {
+  $("#content-slider").lightSlider({
+            loop:true,
+            keyPress:true,
+            mode:'fade',
+            item:1
+        });
+});
+</script>
+
+
+<div class='photo'>
+  <div class='places'>
+    <ul>
+      <li><a href='/photos'>loosies</a></li>
+      <li><a href='/photos/south-korea.html'>south korea</a></li>
+      <li><a href='/photos/taiwan.html'>taiwan</a></li>
+    </ul>
+  </div>
+  <ul id="content-slider" class="content-slider">
+    {% for image in site.static_files %}
+      {% if image.path contains 'portfolio/south-korea' %}
+      <li>
+          <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+      </li>
+      {% endif %}
+    {% endfor %}
+
+
+  </ul>
+</div>

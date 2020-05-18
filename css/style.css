@@ -286,4 +286,14 @@ footer .inner-container{
     margin-top: 48px;
     padding: 0;
   }
+
+  .social {
+    flex-direction: column;
+
+  }
+
+  .social a {
+    margin-left: auto;
+    margin-bottom: 4px;
+  }
 }
