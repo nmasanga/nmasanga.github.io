@@ -2,12 +2,14 @@
 layout: default
 ---
 <link href="/css/blog.css" rel="stylesheet" tpe="text/css">
-<div class='inner-container blog'>
-  <span class='title'>{{ page.title }}</span>
-  <span class='subtitle'>{{page.subtitle}}</span>
-  <span class="date">{{ page.date | date_to_string }}</span>
+<section class="container">
+  <div class='inner-container blog'>
+    <span class='title'>{{ page.title }}</span>
+    <span class='subtitle'>{{page.subtitle}}</span>
+    <span class="date">{{ page.date | date_to_string }}</span>
 
-  <div class="post">
-    {{ content }}
+    <div class="post">
+      {{ content }}
+    </div>
   </div>
-</div>
+</section>

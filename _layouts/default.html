@@ -2,11 +2,12 @@
 	<html>
 		<head>
 			<title>{{ page.title }}</title>
-			<!-- link to main stylesheet -->
+			<link rel="icon" href="getRandomImage(random_images_array, '/img/coffee/smol/')">
 			<meta name="viewport" content="width=device-width, initial-scale=1">
 	    <script src="/js/jquery-3.4.1.min.js"></script>
 	    <script src='/js/main.js'></script>
 	    <script type="text/javascript">
+
 	      // place your images in this array
 	      var random_images_array = ['aeropress.svg', 'chemex.svg', 'french-press.svg', 'hario-v60.svg', 'moka-pot.svg'];
 
@@ -50,14 +51,29 @@
 	        </div>
 	      </div>
 	    </header>
-			<section class="container">
+
 
 			{{ content }}
-			</section>
+
 			<footer class='container'>
 				<div class='inner-container'>
-					<img src='/img/everything.svg'>
+					<div class='trademark-container'>
+						<img src='/img/everything.svg'>
+						<div class='trademark'>
+							<p>ALL RIGHTS RESERVED 2020</p>
+							<p>in between dreams</p>
+							<p>roll with the punches</p>
+						</div>
+					</div>
+					<div class='social'>
+						<a>github</a>
+						<a>linkedin</a>
+						<a>strava</a>
+						<a>pocket</a>
+						<a>goodreads</a>
+					</div>
 				</div>
+
 			</footer>
 		</body>
 	</html>

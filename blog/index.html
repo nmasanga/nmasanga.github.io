@@ -3,19 +3,21 @@ layout: default
 title: norm.blog
 ---
 <link href="/css/blog.css" rel="stylesheet" tpe="text/css">
-<div class='inner-container blog'>
-	<h1>blog</h1>
-	<p style=text-align:center>(my attempt to flex my lexicon)</p>
-	<ul class="posts">
+<section class="container">
+	<div class='inner-container blog'>
+		<h1>blog</h1>
+		<p style=text-align:center>(my attempt to flex my lexicon)</p>
+		<ul class="posts">
 
-	  {% for post in site.posts %}
+		  {% for post in site.posts %}
 
-		<li>
-			<a href="{{ post.url }}" title="{{ post.title }}"><span span class='title'>{{ post.title }}</span></a>
-			<span class='subtitle'>{{post.subtitle}}</span>
-			<span class='date'>{{ post.date | date_to_string }}</span>
-		</li>
+			<li>
+				<a href="{{ post.url }}" title="{{ post.title }}"><span span class='title'>{{ post.title }}</span></a>
+				<span class='subtitle'>{{post.subtitle}}</span>
+				<span class='date'>{{ post.date | date_to_string }}</span>
+			</li>
 
-	  {% endfor %}
-	</ul>
-</div>
+		  {% endfor %}
+		</ul>
+	</div>
+</section>
