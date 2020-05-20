@@ -1,23 +1,8 @@
 ---
 layout: default
+title: 'taiwan'
 ---
-<link type="text/css" rel="stylesheet" href="/css/lightslider.css" />
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="/js/lightslider.js"></script>
-
-
-<script>
-   $(document).ready(function() {
-  $("#content-slider").lightSlider({
-            loop:true,
-            keyPress:true,
-            mode:'fade',
-            item:1
-        });
-});
-</script>
-
-
+{% include lightslider.html %}
 <div class='photo'>
   <div class='places'>
     <ul>
@@ -34,7 +19,5 @@ layout: default
       </li>
       {% endif %}
     {% endfor %}
-
-
   </ul>
 </div>
