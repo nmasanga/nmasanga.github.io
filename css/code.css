@@ -1,0 +1,61 @@
+.project-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #696969;
+  min-height: 60vh;
+  font-size: 18px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/*-----------Posts Container----------*/
+
+.project-list {
+  padding: 64px 8px 0px 8px;
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.project {
+  width: 300px;
+  text-align: left;
+  border: 0.5px solid #696969;
+  border-radius: 6px;
+}
+
+.thumbnail {
+  width: 300px;
+  height: 200px;
+  object-fit: contain;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+}
+
+
+.p-description {
+  padding: 8px 4px 8px 4px;
+  border-top: 0px;
+  font-size: 16px;
+}
+
+.p-description a {
+  text-decoration: underline;
+  color: #C39689;
+  line-height: 16px;
+}
+
+@media screen and (max-width: 660px) {
+  .project-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
