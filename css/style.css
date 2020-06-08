@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: salome;
-  src: url(fonts/salome.otf)
+  src: url(fonts/Salome.otf)
 }
 
 @font-face {
@@ -22,6 +22,7 @@
   box-sizing: border-box;
   padding:0px;
   margin:0px;
+  -webkit-font-smoothing: antialiased
 }
 
 /*------------------------------*/
@@ -178,22 +179,37 @@ header a{
 
 /*---------------ABOUT---------------*/
 
-section .container {
-  min-height: 80%;
+blockquote {
+  color: #696969;
+  font-family: helvetica !important;
+  font-style: italic;
+  font-weight: 100;
+  padding-left: 8px;
+  border-left: 1px solid #C39689;
+  margin: 16px 0 16px 0;
+  font-size: 18px;
 }
+
+.quoter {
+  color: #696969;
+  font-size: 18px;
+  font-family: helvetica !important;
+  font-style: italic;
+}
+
 .about {
   color: #696969;
   font-size: 15px;
   display:flex;
   flex-direction: row;
-  min-height: 80vh;
 }
 
 .name {
   font-family: salome, times;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 300;
   line-height: 38px;
+  padding-bottom: 24px;
 }
 
 .polaroid {
@@ -218,8 +234,6 @@ section .container {
 }
 
 .bean{
-  width: 100%;
-  max-width: 400px;
   display: flex;
   justify-content: center;
   margin: 24px 0 24px 0;
@@ -297,7 +311,6 @@ footer .inner-container{
   .currently {
     margin-top: 48px;
     padding: 0;
-    margin-bottom: 80px;
   }
 
   .social {
